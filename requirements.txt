@@ -1,5 +1,3 @@
 joblib
 pandas
-re
-string
 flask
