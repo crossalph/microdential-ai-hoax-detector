@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Hasil</title>
+    </head>
+
+    <body>        
+        <div class="jumbotron mx-auto my-4", style="width: 500px;">
+            <h1 class="display-4">{{ prediction }}</h1>
+            {% if prediction == "Hoax!" %}
+                <p class="lead">Perhatian! Teks berita ini <b>berpotensi</b> merupakan berita <b>hoax</b>. Waspadalah terkait penyebaran berita bohong dengan membaca sumber terpercaya.</p>
+                <hr class="my-4">
+                <p>Hasil yang ditampilkan pada laman ini tidaklah 100% akurat karena menggunakan algoritma <em>machine learning</em> sederhana.</p>
+            {% else %}
+                <p class="lead">Teks berita yang anda baca memiliki ciri <b>seperti</b> berita yang <b>valid</b> dan dapat dipercaya. Harap pastikan kembali dari sumber terpercaya.</p>
+                <hr class="my-4">
+                <p>Hasil yang ditampilkan pada laman ini tidaklah 100% akurat karena menggunakan algoritma <em>machine learning</em> sederhana.</p>
+            {% endif %}
+            <a class="btn btn-primary btn-lg" href="http://luthfihp017.blogspot.com" target="_blank" role="button">Learn more</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#006bb3"
+              fill-opacity="1"
+              d="M0,96L80,117.3C160,139,320,181,480,208C640,235,800,245,960,229.3C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+          <footer class="text-white text-center p-1" style="background-color: rgb(0, 107, 179)">
+            <p>Created by <a href="http://luthfihp017.blogspot.com" class="text-white fw-bold">Luthfi Hakim</a></p>
+          </footer>
+          <!-- Akhir footer-->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+    </body>
+</html>
