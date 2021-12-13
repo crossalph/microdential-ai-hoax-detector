@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 import regex as re
-import string
+from strings import string
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
