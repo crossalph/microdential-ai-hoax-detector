@@ -5,4 +5,3 @@ gunicorn
 scikit_learn
 dill
 regex==2021.11.10
-strings==0.1.2
