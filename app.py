@@ -1,6 +1,6 @@
 import joblib
 import pandas as pd
-import re
+import regex as re
 import string
 from flask import Flask, render_template, request
 
