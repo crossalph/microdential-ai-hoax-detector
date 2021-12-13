@@ -27,7 +27,7 @@ def predict():
         data = {"text":[message]}
         new_data = pd.DataFrame(data)
         new_data["text"] = new_data["text"].apply(wOPt)
-        new_data_test = new_data
+        new_data_test = new_data["text"]
         new_vect = cv.transform(new_data_test)
         my_prediction = clf.predict(new_vect)
 
